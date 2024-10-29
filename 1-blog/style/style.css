@@ -1,0 +1,46 @@
+* {
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+footer {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.mainTopic {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.topic {
+
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#persone {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+#personeStatus {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+header a {
+    font-size: 16px;
+    line-height: 18.75px;
+    text-decoration: none;
+}
+
+.heading {
+    font-size: 24px;
+    line-height: 38px;
+}
+
+.dateTime {
+    font-size: 14px;
+    line-height: 16.41px;
+}
