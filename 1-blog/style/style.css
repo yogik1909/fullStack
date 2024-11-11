@@ -48,12 +48,12 @@ footer {
     line-height: 30px;
 }
 
-#persone {
+.personeName {
     font-size: 16px;
     line-height: 28px;
 }
 
-#personeStatus {
+.personeStatus {
     font-size: 14px;
     line-height: 28px;
 }
