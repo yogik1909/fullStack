@@ -4,6 +4,12 @@ body {
 
 main {
     background-color: #FFFEFE;
+    display: inline-block;
+    border-radius: 10px;
+    width: 582px;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 246px);
 }
 
 h1 {
@@ -12,6 +18,7 @@ h1 {
     font-size: 36px;
     font-family: 'Open Sans';
     font-weight: 700;
+    padding: 16px 18px;
     /* 
     font: "Open Sans", 700,  36px, #333333; 
     */
@@ -30,4 +37,43 @@ button {
 
 a {
     color: #089FE0;
+}
+
+input {
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.perInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.alterInputColor {
+    background-color: #F5F5F5;
+}
+
+.flexContaner {
+    display: flex;
+    flex-direction: column;
+}
+
+#Name {
+    border-radius: 5px 0 0 5px;
+}
+
+#SurName {
+    border-radius: 0 5px 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+
 }
