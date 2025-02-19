@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
-    <main>
+<body class="container">
+    <main class="main-style">
         <h1>Регистрация</h1>
-        <form action="/reg" method="post">
+        <div class="auth-link">
+            <p>Уже есть аккаунт?
+                <a href="#">Войти</a>
+            </p>
+        </div>
+        <form action="/reg" method="post" class="container regForm">
             <div>
-                <p>Уже есть аккаунт? <a href="#">Войти</a></p>
+                <input type="text" name="empl" id="empl" placeholder="Моя компания" class="input-style">
+            </div>
+            <div class="container per-info">
+                <input type="text" name="Name" id="Name" placeholder="Имя" class="input-style">
+                <input type="text" name="SurName" id="SurName" placeholder="Фамилия" class="input-style">
+            </div>
             </div>
             <div>
-                <input type="text" name="empl" id="empl" placeholder="Моя компания">
+                <input type="email" name="email" id="email" placeholder="E-mail" required class="input-style">
             </div>
-            <div class="perInfo">
-                <div>
-                    <input type="text" name="Name" id="Name" placeholder="Имя" class="alterInputColor">
-                </div>
-                <div>
-                    <input type="text" name="SurName" id="SurName" placeholder="Фамилия" class="alterInputColor">
-                </div>
+            <div class="bttn-style">
+                <button type="button" class="input-style">Зарегистрироваться</button>
+                <img src="./att/Arrow 1.png" alt="Go too...">
             </div>
-            <div>
-                <input type="email" name="email" id="email" placeholder="E-mail" required class="alterInputColor">
-            </div>
-            <div>
-                <button type="button">Зарегистрироваться</button>
-            </div>
-            <div>
+            <div class="term-style">
                 <input type="checkbox" name="apply" id="apply" required>
                 <label for="apply">Я прочитал и принимают <a href="#">Услования использвания</a></label>
             </div>

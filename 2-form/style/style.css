@@ -1,38 +1,26 @@
-body {
-    background-color: #F39494
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-main {
-    background-color: #FFFEFE;
-    display: inline-block;
-    border-radius: 10px;
-    width: 582px;
-    position: absolute;
-    top: 50%;
-    left: calc(50% - 246px);
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: #F39494;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
-
     color: #333333;
     font-size: 36px;
-    font-family: 'Open Sans';
     font-weight: 700;
-    padding: 16px 18px;
-    /* 
-    font: "Open Sans", 700,  36px, #333333; 
-    */
-
-}
-
-button {
-    background-color: #089FE0;
-    font-family: Open Sans;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.51px;
+    margin: 0px 0px 10px 0px;
     text-align: center;
-    color: #FFFFFF;
 }
 
 a {
@@ -40,40 +28,115 @@ a {
 }
 
 input {
-    border: solid 1px;
+    background-color: #f5f5f5;
+    color: #999;
+    font-style: 16px;
+    padding: 9px 11px;
+    border: none;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+button {
+    background-color: #089FE0;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 12px 0px 12px 1vw;
+    border: none;
     border-radius: 5px;
 }
 
-.perInfo {
-    display: flex;
-    flex-direction: row;
+label {
+    color: #666;
 }
 
-.alterInputColor {
-    background-color: #F5F5F5;
+a:hover {
+    color: #056d99;
 }
 
-.flexContaner {
-    display: flex;
-    flex-direction: column;
+input:focus {
+    background-color: #ffffff;
+    outline: 1px solid #F5F5F5;
+    font-style: normal;
+    color: #333333;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #2fb0e7;
 }
 
 #Name {
     border-radius: 5px 0 0 5px;
+    flex: 1;
 }
 
 #SurName {
     border-radius: 0 5px 5px 0;
+    flex: 1;
 }
 
-form {
+.container {
     display: flex;
-    flex-direction: column;
 }
 
-input::placeholder {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
+.main-style {
+    width: 582px;
+    height: 573px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 95px;
+}
 
+.regForm {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-link {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin: 0px 0px 47px 0px;
+}
+
+.input-style {
+    width: 100%;
+}
+
+.per-info {
+    flex-direction: row;
+    gap: 1px;
+}
+
+.bttn-style {
+    position: relative;
+}
+
+.bttn-style img {
+    position: absolute;
+    top: 10px;
+    right: 22px;
+}
+
+.term-style {
+    font-size: 14px;
+}
+
+.term-style a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .main-style {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+        padding: 5vw;
+    }
 }
