@@ -10,18 +10,24 @@
 <body>
     <header>
         <nav>
+            <div class="home-button" >
+                B
+            </div>
             <ul>
-                <li><a href="#">Мой блог</a></li>
-                <li><a href="#">HTML и CSS</a></li>
-                <li><a href="#">Frontend</a></li>
-                <li><a href="#">Backend</a></li>
+                <li class="item1"><a href="#">Мой блог</a></li>
+                <li class="item2"><a href="#">HTML и CSS</a></li>
+                <li class="item3"><a href="#">Frontend</a></li>
+                <li class="item4"><a href="#">Backend</a></li>
             </ul>
             <form action="/search">
-                <input type="search" id="search" name="search" placeholder="Поиск">
+                <div class="search-style">
+                    <input type="search" id="search" name="search" placeholder="Поиск">
+                    <img src="img/search.png" height="14" width="14"/>
+                </div>
             </form>
         </nav>
     </header>
-    <section class="dateTime">
+    <section class="date-time">
         <p>
             FRONTEND &bull; 12 мая 2024
         </p>
@@ -36,8 +42,8 @@
             <img src="img/person.png" alt="Аватар автора">
         </div>
         <div>
-            <p class="personeName">Наталья Васильева</p>
-            <p class="personeStatus">Разработчик</p>
+            <p class="person-name">Наталья Васильева</p>
+            <p class="person-status">Разработчик</p>
         </div>
     </section>
     <section>

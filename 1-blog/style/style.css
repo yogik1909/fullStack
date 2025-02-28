@@ -1,35 +1,67 @@
 * {
     font-family: Roboto;
     font-weight: 400;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #374151;
+    text-align: center;
 }
 
 header {
-    margin: 0px 0px 69px 0px;
+    width: 75%;
+    margin: auto;
 }
 
 header a {
     font-size: 16px;
-    line-height: 18.75px;
+    line-height: 18px;
     text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+nav ul li:first-child {
+    padding-left: 11px;
+}
+
+.item2 {
+    padding-left: 77px;
+}
+
+.item3 {
+    padding-left: 52px
+}
+
+.item4 {
+    padding-left: 39px;
 }
 
 nav input[type="search"] {
-    border: 1px solid gray;
     border-radius: 100px;
     height: 40px;
+    max-width: 224px;
     background-color: rgba(31, 41, 55, 0.6);
+    border: none;
+    padding: 9px 0 12px 49px;
 }
 
 nav input[type="search"]::placeholder {
-    color: #fff;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
-    text-align: left;
+    opacity: 60%;
 }
 
 footer {
@@ -37,37 +69,77 @@ footer {
     line-height: 28px;
 }
 
+.flex-container {
+    display: flex;
+    #flex: 1;
+    align-items: center;
+}
+
+.home-button {
+    width: 35px;
+    height: 35px;
+    background-color: #4B5563;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+    box-shadow: 0 15px 30px 0 #00000026;
+
+}
+
+.search-style {
+    position: relative;
+}
+
+.search-style img {
+    position: absolute;
+    left: 18px;
+    top: 14px;
+}
+
 .mainTopic {
     font-size: 20px;
     line-height: 32px;
+    width: 708px;
+    margin: auto;
 }
 
 .topic {
-
     font-size: 16px;
     line-height: 30px;
+    width: 708px;
+    margin: auto;
 }
 
-.personeName {
+.person-name {
     font-size: 16px;
     line-height: 28px;
+    margin: 0;
 }
 
-.personeStatus {
+.person-status {
+    margin: 0;
     font-size: 14px;
     line-height: 28px;
+    opacity: 60%;
 }
 
-.dateTime {
+.date-time {
     font-size: 14px;
-    line-height: 16.41px;
+    line-height: 16px;
+    margin-top: 79px;
     margin-bottom: 14px;
+    opacity: 60%;
+    color: #fff;
 }
 
 .headline {
     font-size: 24px;
     line-height: 38px;
-    margin: 0px 0px 30px;
+    margin: 0 0 30px;
+    color: #ffffff;
 }
 
 .headline p {
@@ -75,7 +147,12 @@ footer {
 }
 
 .persInfo {
-    margin: 0px 0px 28px 0px;
+    display: flex;
+    gap: 16px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .persImg {
@@ -92,5 +169,11 @@ footer {
 }
 
 .cover {
-    margin-bottom: 69px;
+    max-width: 67vw;
+    margin: auto;
+}
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
