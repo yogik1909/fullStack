@@ -11,8 +11,10 @@ body {
 }
 
 header {
-    width: 75%;
+    max-width: 1080px;
     margin: auto;
+    display: flex;
+    align-items: baseline;
 }
 
 header a {
@@ -22,34 +24,17 @@ header a {
 }
 
 nav {
-    display: flex;
-    align-items: center;
+    flex: 1;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    flex: 1;
     justify-content: flex-start;
 }
-nav ul li:first-child {
-    padding-left: 11px;
-}
 
-.item2 {
-    padding-left: 77px;
-}
-
-.item3 {
-    padding-left: 52px
-}
-
-.item4 {
-    padding-left: 39px;
-}
-
-nav input[type="search"] {
+header input[type="search"] {
     border-radius: 100px;
     height: 40px;
     max-width: 224px;
@@ -58,7 +43,7 @@ nav input[type="search"] {
     padding: 9px 0 12px 49px;
 }
 
-nav input[type="search"]::placeholder {
+header input[type="search"]::placeholder {
     font-size: 16px;
     font-weight: 400;
     opacity: 60%;
@@ -69,24 +54,24 @@ footer {
     line-height: 28px;
 }
 
-.flex-container {
+.logo {
     display: flex;
-    #flex: 1;
+    gap: 11px;
     align-items: center;
+    padding-right: 77px;
 }
 
-.home-button {
+.logo-button {
     width: 35px;
     height: 35px;
     background-color: #4B5563;
     color: #FFFFFF;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
 
     box-shadow: 0 15px 30px 0 #00000026;
-
 }
 
 .search-style {
@@ -146,22 +131,23 @@ footer {
     margin: 0;
 }
 
-.persInfo {
+.pers-info {
     display: flex;
     gap: 16px;
     margin: auto;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    text-align: left;
 }
 
-.persImg {
+.pers-img {
     width: 50px;
     height: 50px;
 
 }
 
-.persImg img {
+.pers-img img {
     object-fit: cover;
     width: 100%;
     height: 100%;
