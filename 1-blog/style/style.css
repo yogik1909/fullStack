@@ -31,6 +31,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    gap: 52px;
     justify-content: flex-start;
 }
 
@@ -58,7 +59,7 @@ footer {
     display: flex;
     gap: 11px;
     align-items: center;
-    padding-right: 77px;
+    margin-right: 77px;
 }
 
 .logo-button {
