@@ -1,35 +1,54 @@
 * {
     font-family: Roboto;
     font-weight: 400;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #374151;
+    text-align: center;
 }
 
 header {
-    margin: 0px 0px 69px 0px;
+    max-width: 1080px;
+    margin: auto auto 79px;
+    display: flex;
+    align-items: baseline;
+
 }
 
 header a {
     font-size: 16px;
-    line-height: 18.75px;
+    line-height: 18px;
     text-decoration: none;
+}
+
+nav {
+    flex: 1;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 52px;
+    justify-content: flex-start;
 }
 
-nav input[type="search"] {
-    border: 1px solid gray;
+header input[type="search"] {
     border-radius: 100px;
     height: 40px;
+    max-width: 224px;
     background-color: rgba(31, 41, 55, 0.6);
+    border: none;
+    padding: 9px 0 12px 49px;
 }
 
-nav input[type="search"]::placeholder {
-    color: #fff;
-    font-family: Roboto;
+header input[type="search"]::placeholder {
     font-size: 16px;
     font-weight: 400;
-    text-align: left;
+    opacity: 60%;
 }
 
 footer {
@@ -37,54 +56,99 @@ footer {
     line-height: 28px;
 }
 
+.logo {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    margin-right: 77px;
+}
+
+.logo-button {
+    width: 35px;
+    height: 35px;
+    background-color: #4B5563;
+    color: #FFFFFF;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+    box-shadow: 0 15px 30px 0 #00000026;
+}
+
+.search-style {
+    position: relative;
+}
+
+.search-style img {
+    position: absolute;
+    left: 18px;
+    top: 14px;
+}
+
 .mainTopic {
     font-size: 20px;
     line-height: 32px;
+    width: 708px;
+    margin: auto;
+    text-align: left;
 }
 
 .topic {
-
     font-size: 16px;
     line-height: 30px;
+    width: 708px;
+    margin: auto;
+    text-align: left;
 }
 
-.personeName {
+.person-name {
     font-size: 16px;
     line-height: 28px;
+    margin: 0;
 }
 
-.personeStatus {
+.person-status {
+    margin: 0;
     font-size: 14px;
     line-height: 28px;
+    opacity: 60%;
 }
 
-.dateTime {
+.bio {
+    color: #ffffff;
+}
+
+.date-time {
     font-size: 14px;
-    line-height: 16.41px;
+    line-height: 16px;
     margin-bottom: 14px;
+    opacity: 60%;
 }
 
 .headline {
     font-size: 24px;
     line-height: 38px;
-    margin: 0px 0px 30px;
+    margin: 0 0 30px;
 }
 
-.headline p {
-    margin: 0;
+.pers-info {
+    display: flex;
+    gap: 16px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-.persInfo {
-    margin: 0px 0px 28px 0px;
-}
-
-.persImg {
+.pers-img {
     width: 50px;
     height: 50px;
 
 }
 
-.persImg img {
+.pers-img img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -92,5 +156,11 @@ footer {
 }
 
 .cover {
-    margin-bottom: 69px;
+    max-width: 67vw;
+    margin: auto;
+}
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
